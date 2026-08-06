@@ -52,7 +52,7 @@ export function Sidebar({ user }: SidebarProps) {
   };
 
   return (
-    <aside className="fixed inset-y-0 left-0 flex w-64 flex-col border-r border-zinc-200 bg-white">
+    <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col border-r border-zinc-200 bg-white lg:flex">
       {/* Logo / Brand Header */}
       <div className="px-6 pt-8 pb-2">
         <span className="text-xl font-extrabold tracking-wider text-brand select-none">
