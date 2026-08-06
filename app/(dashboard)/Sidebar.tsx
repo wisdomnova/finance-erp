@@ -54,10 +54,17 @@ export function Sidebar({ user }: SidebarProps) {
   return (
     <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col border-r border-zinc-200 bg-white lg:flex">
       {/* Logo / Brand Header */}
-      <div className="px-6 pt-8 pb-2">
-        <span className="text-xl font-extrabold tracking-wider text-brand select-none">
-          ISSAM
-        </span>
+      <div className="px-6 pt-6 pb-2">
+        <Link href="/" className="block cursor-pointer">
+          <img
+            src="/logo.png"
+            alt="TracTrac Logo"
+            className="h-10 w-auto object-contain"
+          />
+          <span className="text-[10px] font-bold tracking-wider text-brand block mt-1 uppercase select-none">
+            ISSAM
+          </span>
+        </Link>
       </div>
 
       {/* Navigation Section */}

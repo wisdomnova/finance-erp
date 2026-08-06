@@ -65,9 +65,16 @@ export function MobileNav({ user }: MobileNavProps) {
         >
           <IconMenu2 size={24} />
         </button>
-        <span className="text-lg font-extrabold tracking-wider text-brand select-none">
-          ISSAM
-        </span>
+        <Link href="/" className="block text-center cursor-pointer">
+          <img
+            src="/logo.png"
+            alt="TracTrac Logo"
+            className="h-8 w-auto object-contain mx-auto"
+          />
+          <span className="text-[9px] font-bold tracking-wider text-brand block mt-0.5 uppercase select-none">
+            ISSAM
+          </span>
+        </Link>
         <div className="w-6" /> {/* Spacer for balance */}
       </header>
 
@@ -94,9 +101,16 @@ export function MobileNav({ user }: MobileNavProps) {
             >
               {/* Sidebar Header */}
               <div className="flex h-16 items-center justify-between px-6">
-                <span className="text-lg font-extrabold tracking-wider text-brand select-none">
-                  ISSAM
-                </span>
+                <Link href="/" onClick={() => setIsOpen(false)} className="block cursor-pointer">
+                  <img
+                    src="/logo.png"
+                    alt="TracTrac Logo"
+                    className="h-8 w-auto object-contain"
+                  />
+                  <span className="text-[9px] font-bold tracking-wider text-brand block mt-0.5 uppercase select-none">
+                    ISSAM
+                  </span>
+                </Link>
                 <button
                   type="button"
                   onClick={() => setIsOpen(false)}

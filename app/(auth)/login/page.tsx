@@ -11,10 +11,17 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 px-4">
       <div className="w-full max-w-[400px] border border-zinc-200 bg-white p-8 rounded-2xl">
+        <div className="mb-6">
+          <img
+            src="/logo.png"
+            alt="TracTrac Logo"
+            className="h-12 w-auto object-contain"
+          />
+        </div>
         <h1 className="text-2xl font-semibold text-zinc-900">
           Sign In
         </h1>
-        <p className="mt-2 text-sm text-zinc-500">
+        <p className="mt-2 text-sm text-zinc-550">
           Enter your credentials to access your account.
         </p>
 
