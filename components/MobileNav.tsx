@@ -57,7 +57,7 @@ export function MobileNav({ user }: MobileNavProps) {
   return (
     <div className="lg:hidden">
       {/* Mobile Top Header */}
-      <header className="sticky top-0 z-40 flex h-16 items-center justify-between border-b border-zinc-200 bg-white px-6">
+      <header className="sticky top-0 z-40 flex h-16 items-center justify-between bg-white px-6">
         <button
           type="button"
           onClick={() => setIsOpen(true)}
@@ -93,7 +93,7 @@ export function MobileNav({ user }: MobileNavProps) {
               className="fixed inset-y-0 left-0 z-50 flex w-72 flex-col bg-white"
             >
               {/* Sidebar Header */}
-              <div className="flex h-16 items-center justify-between px-6 border-b border-zinc-150">
+              <div className="flex h-16 items-center justify-between px-6">
                 <span className="text-lg font-extrabold tracking-wider text-brand select-none">
                   ISSAM
                 </span>
