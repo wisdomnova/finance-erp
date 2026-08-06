@@ -2,6 +2,7 @@ import React from "react";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { Sidebar } from "./Sidebar";
+import { AnimatePage } from "@/components/ui";
 
 export default async function DashboardLayout({
   children,
@@ -29,7 +30,9 @@ export default async function DashboardLayout({
 
       {/* Main Content Area */}
       <main className="flex-1 pl-64">
-        <div className="mx-auto max-w-7xl p-8">{children}</div>
+        <div className="mx-auto max-w-7xl p-8">
+          <AnimatePage>{children}</AnimatePage>
+        </div>
       </main>
     </div>
   );

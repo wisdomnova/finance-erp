@@ -73,19 +73,19 @@ export default function OverviewPage() {
         </div>
 
         <div className="border border-zinc-200 bg-white p-6 rounded-2xl">
-          <span className="text-[10px] font-bold text-zinc-450 uppercase tracking-wider block">
+          <span className="text-[10px] font-bold text-zinc-455 uppercase tracking-wider block">
             Total Spent (Activated)
           </span>
           <span className="text-2xl font-bold text-emerald-600 block mt-2">
             ₦{totalSpentNaira.toLocaleString()}
           </span>
-          <span className="text-xs text-zinc-550 font-medium block mt-1">
+          <span className="text-xs text-zinc-555 font-medium block mt-1">
             {totalUtilization.toFixed(1)}% Utilization rate
           </span>
         </div>
 
         <div className="border border-zinc-200 bg-white p-6 rounded-2xl">
-          <span className="text-[10px] font-bold text-zinc-450 uppercase tracking-wider block">
+          <span className="text-[10px] font-bold text-zinc-455 uppercase tracking-wider block">
             Net Cash Balance
           </span>
           <span className={`text-2xl font-bold block mt-2 ${remainingCashNaira < 0 ? "text-red-650" : "text-zinc-950"}`}>
@@ -128,7 +128,7 @@ export default function OverviewPage() {
                 <div className="h-8 w-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
                   <IconChecks size={16} />
                 </div>
-                <span className="text-sm font-bold text-zinc-900 group-hover:text-brand transition-colors">
+                <span className="text-sm font-bold text-zinc-950 group-hover:text-brand transition-colors">
                   View Queue
                 </span>
                 {totalPendingCount > 0 ? (
@@ -173,7 +173,7 @@ export default function OverviewPage() {
                   <div key={cat.id} className="space-y-1.5">
                     <div className="flex justify-between text-xs font-medium">
                       <span className="text-zinc-800 font-bold">{cat.name}</span>
-                      <span className="text-zinc-550">
+                      <span className="text-zinc-555">
                         {percent.toFixed(0)}% (₦{spentNaira.toLocaleString()} / ₦{totalNaira.toLocaleString()})
                       </span>
                     </div>

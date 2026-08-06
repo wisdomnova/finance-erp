@@ -297,7 +297,7 @@ export default function DataEntryPage() {
                               onChange={(e) => handleFileChange(row.itemId, e)}
                             />
                           </label>
-                          <span className="text-xs text-zinc-550 font-medium">
+                          <span className="text-xs text-zinc-555 font-medium">
                             {row.docName || "No file attached (Required)"}
                           </span>
                         </div>
@@ -393,7 +393,7 @@ export default function DataEntryPage() {
                                   <span className="text-xs font-mono text-zinc-400">{item.code}</span>
                                   <h5 className="text-xs font-semibold text-zinc-800 truncate">{item.name}</h5>
                                 </div>
-                                <div className="flex items-center gap-2 mt-0.5 text-[10px] text-zinc-450">
+                                <div className="flex items-center gap-2 mt-0.5 text-[10px] text-zinc-455">
                                   <span>Budget: ${item.budgetUSD.toLocaleString()}</span>
                                   {stats.activatedNaira > 0 && (
                                     <span className="text-emerald-600 font-medium">Spent: ₦{stats.activatedNaira.toLocaleString()}</span>
@@ -403,7 +403,7 @@ export default function DataEntryPage() {
 
                               <div className="flex items-center gap-3 shrink-0">
                                 <div className="text-right">
-                                  <span className="text-[10px] font-bold text-zinc-450 uppercase tracking-wider block">
+                                  <span className="text-[10px] font-bold text-zinc-455 uppercase tracking-wider block">
                                     Remaining
                                   </span>
                                   <span className={`text-xs font-bold ${stats.remainingNaira < 0 ? "text-red-650" : "text-zinc-800"}`}>

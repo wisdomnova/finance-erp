@@ -2,6 +2,8 @@
 
 import React, { InputHTMLAttributes, SelectHTMLAttributes, TextareaHTMLAttributes } from "react";
 import { IconChevronDown } from "@tabler/icons-react";
+import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
@@ -137,6 +139,20 @@ export const PageHeader: React.FC<{ title: string }> = ({ title }) => {
     <div className="pb-6 mb-8 border-b border-zinc-200">
       <h1 className="text-2xl font-bold tracking-tight text-zinc-900">{title}</h1>
     </div>
+  );
+};
+
+export const AnimatePage: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const pathname = usePathname();
+  return (
+    <motion.div
+      key={pathname}
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
+    >
+      {children}
+    </motion.div>
   );
 };
 
